@@ -1,0 +1,169 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="CropRecommendation.html">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+{% endblock %}
+
+{% block body %}
+<section class="tm-welcome-section">
+    <div class="container tm-position-relative">
+      <div class="tm-lights-container">
+        <img src="{{ url_for('static', filename='img/img2.png') }}" alt="Light" class="light light-1" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/npk.png') }}" alt="Light" class="light light-2" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/npk2.png') }}" alt="Light" class="light light-3" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/seeds.png') }}" alt="Light" class="light light-3" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/final.jpg') }}" alt="Light" class="light light-3" height="188px" width="230px">
+        <br>
+      </div>
+      <div class="row tm-welcome-content">
+        <br><br>
+        <h2 class="white-text tm-handwriting-font tm-welcome-header">
+          <img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line"></h2>
+        <h2 class="gold-text tm-welcome-header-2">SmartFarm</h2>
+        <p class="gray-text tm-welcome-description"><span
+            class="gold-text">Farm = AI + Crop + Fertilizer.</span> We take of your soil's health. We at <span class="gold-text">
+          SmartFarm</span>, honor <span
+                class="gold-text">the Indian Farmer's love, hard work and character.</span>
+          There are many reasons to implement a smart agriculture solution into commercial and local farming.
+          In a world where the internet of things is accelerating adoption of data gathering and automation,
+          an important industry such as agriculture can surely benefit.
+          Monitoring and collecting data for soil moisture, air temperature, air humidity and sunlight intensity
+          across multiple fields will improve efficiency of water usage and crop yield of large and local farms.
+          As the world population increases, farming and food production will have to increase with it. Low cost sensors,
+          data insights and IoT Platforms will enable this increase in efficiency and production.
+          Here are some benefits of implementing a smart agriculture solution:</p>
+        <br><br><br>
+      </div>
+      <a href="https://www.agrocares.com/2020/11/02/npk-what-is-it-and-why-is-it-so-important/"> <img src="{{ url_for('static', filename='img/home2.jpg') }}" alt="Table Set" class="tm-table-set img-responsive" width="100%"></a>
+    </div>
+  </section>
+  <div class="tm-main-section bg">
+    <div class="container" id="main">
+      <section class="tm-section tm-section-margin-bottom-0 row">
+        <div class="col-lg-12 tm-section-header-container">
+          <h2 class="tm-section-header gold-text tm-handwriting-font">Our Services</h2>
+          <div class="tm-hr-container">
+            <hr class="tm-hr">
+          </div>
+        </div>
+        <div class="col-lg-12 tm-popular-items-container">
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-2.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">C</span>rop Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Which crop to grow, that is ideally suited to conditions?
+                Make an informed decision before starting the cultivation of crops.</p>
+              <div class="order-now-container">
+                <a href="CropRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-3.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">F</span>ertilizer Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Which fertilizer to choose for the cultivated soil and prescribed crop for optimum production?
+              Provide your crops, the essential nutrients.</p>
+              <div class="order-now-container">
+                <a href="FertilizerRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-1.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">C</span>ontact Us</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Need any help,Reach out to us through various ways. Social media handle links of out teams are mentioned below.
+                You can just drop your query, We will contact you back.</p>
+              <div class="order-now-container">
+                <a href="" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<footer>
+    <div class="tm-black-bg">
+      <div class="container">
+        <div class="row margin-bottom-60">
+          <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
+            <h3 class="tm-footer-div-title">Our Team</h3>
+            <ul>
+              <li>Sumit Kumar</li>
+              <li>Zohair Merchant</li>
+              <li>Deep Parmar</li>
+              <li>Dhrumil Makwana</li>
+            </ul>
+          </nav>
+          <div class="col-lg-5 col-md-5 tm-footer-div">
+            <h3 class="tm-footer-div-title">Few words for our Indian Farmers</h3>
+            <p class="margin-top-15" align="justify">India is called as the land of villages and the people who live in villages are mostly involved in farming.</p>
+
+             <p class="margin-top-15" align="justify"> The farmers of India are called the “Annadaata” or the food provider of the nation.</p>
+
+              <p class="margin-top-15" align="justify">You raised a fine family, worked the land well and always followed the Son,
+                Hang up your shovel inside of the barn; your work here on earth is done.</p>
+
+              <p class="margin-top-15" align="justify">A faith few possess led your journey through life, often a jagged and stony way,
+                The sun is setting, the cattle are all bedded, and here now is the end of your day.</p>
+
+              <p class="margin-top-15" align="justify">Your love of God’s soil has passed on to your kin; the stories flow like fine wine,
+                Wash off your work boots in the puddle left by blessed rain one final time.</p>
+
+              <p class="margin-top-15" align="justify">You always believed that the good Lord would provide and He always had somehow,
+                Take off your gloves and put them down, no more sweat and worry for you now.</p>
+
+              <p class="margin-top-15" align="justify">Your labor is done, your home now is heaven; no more must you wait,
+              Your legacy lives on, your love of the land, and we will close the gate.</p>
+          </div>
+          <div class="col-lg-4 col-md-5 tm-footer-div">
+            <h3 class="tm-footer-div-title">Connect With Us</h3>
+            <!-- Sumit -->
+            Sumit &nbsp;
+              <a href="https://www.facebook.com/profile.php?id=100011782011034" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.youtube.com/" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+              <a href="" class="tm-social-icon"><i class="fa fa-instagram"></i></a>
+              <a href="https://github.com/SumitKrGitHub" class="tm-social-icon"><i class="fa fa-github"></i></a>
+              <!-- Zohair Merchant -->
+            <br><br>
+            Zohair &nbsp;
+              <a href="https://www.linkedin.com/in/mehak-puri-9b058414b/" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+              <a href="" class="tm-social-icon"><i class="fa fa-instagram"></i></a>
+              <a href="https://github.com/SumitKrGitHub" class="tm-social-icon"><i class="fa fa-github"></i></a>
+             <br><br>
+             <!-- Deep -->
+            Deep &nbsp;
+              <a href="" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.youtube.com/" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+              <a href="" class="tm-social-icon"><i class="fa fa-instagram"></i></a>
+              <a href="https://github.com/SumitKrGitHub" class="tm-social-icon"><i class="fa fa-github"></i></a>
+             <br><br>
+             <!-- Deep -->
+            Dhrumil &nbsp;
+              <a href="" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.youtube.com/" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+              <a href="" class="tm-social-icon"><i class="fa fa-instagram"></i></a>
+              <a href="https://github.com/SumitKrGitHub" class="tm-social-icon"><i class="fa fa-github"></i></a>
+             <br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+{% endblock %}
